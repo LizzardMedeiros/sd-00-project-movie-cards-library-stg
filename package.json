@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json ."
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json .",
+    "stylelint": "npx stylelint '**/*.css'"
   },
   "eslintConfig": {
     "extends": "react-app"
