@@ -24,6 +24,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
     - [Revisando um pull request](#revisando-um-pull-request)
 - [Como desenvolver](#como-desenvolver)
+  - [Linter e StyleLint](#linter-e-stylelint)
   - [Dica: desativanto testes](#dica-desativanto-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
@@ -84,7 +85,6 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 ## Data de Entrega
 
-  - Projeto individual.
   - Serão `X` dias de projeto.
   - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
 
@@ -173,11 +173,11 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
-⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo CodeClimate estão resolvidas! ⚠
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** e **StyleLint** estão resolvidas! ⚠
 
 ### Revisando um pull request
 
@@ -246,6 +246,23 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
+---
+
+## Linter e StyleLint
+
+Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint e StyleLint.
+Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
+e de fácil manutenção! Para roda-los localmente no projeto, execute os comandos abaixo:
+
+  - ESLint: `npm run lint`
+  - StyleLint: `npm run stylelint`
+
+
+⚠️ PULL REQUESTS COM ISSUES DE LINTER E STYLELINT NÃO SERÃO AVALIADAS.
+ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO! ⚠️
+
+---
+
 ## Dica: desativanto testes
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
@@ -274,7 +291,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 # Requisitos do projeto
 
-⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **CodeClimate**
+⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** e **StyleLint** ⚠️
 
 ### 1 - Crie um componente chamado `Header`
 
