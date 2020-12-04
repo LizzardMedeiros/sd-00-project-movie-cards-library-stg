@@ -24,7 +24,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
     - [Revisando um pull request](#revisando-um-pull-request)
 - [Como desenvolver](#como-desenvolver)
-  - [Linter e StyleLint](#linter-e-stylelint)
+  - [Linter](#linter)
   - [Dica: desativanto testes](#dica-desativanto-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
@@ -177,7 +177,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
-⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** e **StyleLint** estão resolvidas! ⚠
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
 
 ### Revisando um pull request
 
@@ -248,17 +248,16 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ---
 
-## Linter e StyleLint
+## Linter
 
 Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint e StyleLint.
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
-e de fácil manutenção! Para roda-los localmente no projeto, execute os comandos abaixo:
+e de fácil manutenção! Para roda-los localmente no projeto, execute o comando abaixo:
 
-  - ESLint: `npm run lint`
-  - StyleLint: `npm run stylelint`
+  - `npm run lint`
 
 
-⚠️ PULL REQUESTS COM ISSUES DE LINTER E STYLELINT NÃO SERÃO AVALIADAS.
+⚠️ PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
 ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO! ⚠️
 
 ---
@@ -291,7 +290,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 # Requisitos do projeto
 
-⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** e **StyleLint** ⚠️
+⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
 ### 1 - Crie um componente chamado `Header`
 
